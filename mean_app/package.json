@@ -1,0 +1,8 @@
+{
+  "name": "mean-demo",
+  "version": "0.0.1",
+  "dependencies": {
+    "body-parser": "^1.6.5",
+    "mongoose": "^3.8.15"
+  }
+}

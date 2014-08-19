@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="meetupApp">
+<head>
+	<title>Mean Stack Test Application</title>
+</head>
+<body>
+	<!-- Meetupos View -->
+	<div ng-controller="meetupsController">
+		<h3>There are {{meetups.length}} meetups</h3>
+		<ul>
+			<li ng-repeat="meetup in meetups">
+				{{meetup.name}}
+			</li>
+		</ul>
+		<form ng-submit="createMeetup()">
+			<input type="text" placeholder="Meetup Name" ng-model="meetupName"/>
+			<button type="submmit">Add Meetup</button>
+		</form>
+	</div>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.22/angular.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.22/angular-resource.min.js"></script>
+	<script type="text/javascript" src="/js/app.js"></script>
+	<script type="text/javascript" src="/js/controller/meetups-controller.js"></script>
+</body>
+</html>
